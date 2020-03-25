@@ -31,7 +31,6 @@
 
 .edited-item {
   display: flex;
-
   &__actions,
   .checkbox {
     flex-shrink: 0;
@@ -45,9 +44,10 @@
   }
   &__actions {
     display: flex;
+    align-items: center;
   }
   .ic-remove,
-  .go-detail-link {
+  .ic-edit {
     margin-left: 10px;
   }
 }

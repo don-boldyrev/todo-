@@ -16,14 +16,6 @@
         {{ note.description }}
       </div>
       <div class="edited-item__actions">
-        <ic-edit
-          class="ic-edit"
-          @click="editNoteConfirm"
-        />
-        <ic-remove
-          class="ic-remove"
-          @click="removeNoteConfirm"
-        />
         <router-link
           v-if="!isDetailPage"
           tag="div"
@@ -37,7 +29,14 @@
         >
           <v-button icon="eye" />
         </router-link>
-        
+        <ic-edit
+          class="ic-edit"
+          @click="editNoteConfirm"
+        />
+        <ic-remove
+          class="ic-remove"
+          @click="removeNoteConfirm"
+        />        
       </div>
     </div>
 
