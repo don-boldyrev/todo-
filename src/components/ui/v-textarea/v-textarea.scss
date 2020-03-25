@@ -1,0 +1,26 @@
+.control-btns {
+  margin-bottom: 10px;
+
+  &__btn {
+    margin-left: 10px;
+  }
+  .control-btns__btn:first-child {
+    margin-left: 0;
+  }
+}
+
+.label-text {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.textarea {
+  width: 100%;
+  resize: none;
+  border: 0;
+  outline: none;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, .4);
+}

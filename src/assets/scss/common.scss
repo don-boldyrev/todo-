@@ -1,0 +1,43 @@
+html,
+body {
+  font-family: 'Helvetica', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;
+  font-stretch: normal;
+  height: 100vh;
+  text-align: left;
+  -webkit-font-smoothing: subpixel-antialiased;
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+textarea,
+.input-checkbox {
+  -webkit-appearance: none;
+  border-radius: 0;
+  font-family: 'Helvetica', sans-serif;
+}
+
+*::-ms-clear {
+  display: none;
+}
+
+img,
+svg {
+  display: block;
+}
+
+img,
+a {
+  user-select: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+}

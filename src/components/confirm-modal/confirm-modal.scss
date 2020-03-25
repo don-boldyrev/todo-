@@ -1,0 +1,15 @@
+.confirm-modal {
+  font-size: 16px;
+  max-width: 300px;
+  &__question {
+    margin-bottom: 20px;
+  }
+  &__btns {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.cancel-btn {
+  margin-left: 10px;
+}

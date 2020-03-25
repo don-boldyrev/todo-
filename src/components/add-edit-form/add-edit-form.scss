@@ -1,0 +1,19 @@
+.control {
+  margin-bottom: 10px;
+}
+
+.btn-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn-cancel {
+  margin-left: 10px;
+}
+
+.in-modal {
+  min-width: 350px;
+  max-width: 500px;
+  background-color: rgba(242, 185, 174, .4);
+  padding: 5px;
+}
