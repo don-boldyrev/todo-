@@ -12,20 +12,9 @@
           class="ic-checked"
         />
       </div>
-      <router-link
-        :to="{
-          name: 'note-detail',
-          params: {
-            id: note.id
-          }
-        }"
-        :class="{
-          disabled: isDetailPage
-        }"
-        class="edited-item__description"
-      >
+      <div class="edited-item__description">
         {{ note.description }}
-      </router-link>
+      </div>
       <div class="edited-item__actions">
         <ic-edit
           class="ic-edit"
@@ -35,6 +24,20 @@
           class="ic-remove"
           @click="removeNoteConfirm"
         />
+        <router-link
+          v-if="!isDetailPage"
+          tag="div"
+          class="go-detail-link"
+          :to="{
+            name: 'note-detail',
+            params: {
+              id: note.id
+            }
+          }"
+        >
+          <v-button icon="eye" />
+        </router-link>
+        
       </div>
     </div>
 

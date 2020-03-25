@@ -3,12 +3,12 @@
     <portal to="modal-container" v-if="isOpen">
       <div
         class="modal-overlay"
-        @click="close"
+        @mousedown="close"
       >
         <transition name="scale-height">
           <div
             ref="modal-content"
-            @click.stop
+            @mousedown.stop
             class="modal-transition"
             v-if="transitionStart"
           >

@@ -1,8 +1,4 @@
 
-.disabled {
-  pointer-events:none;
-}
-
 .checkbox,
 .ic-edit,
 .ic-remove {
@@ -46,12 +42,12 @@
     color: #777777;
     font-size: 25px;
     font-weight: bold;
-    user-select: none;
   }
   &__actions {
     display: flex;
   }
-  .ic-remove {
+  .ic-remove,
+  .go-detail-link {
     margin-left: 10px;
   }
 }
@@ -120,21 +116,7 @@
         pointer-events: none;
         opacity: 0.4;
       }
-      .edited-item {
-        &__description {
-          pointer-events: none;
-        }
-      }
       
-    }
-    &__header {
-      .edited-item {
-        &__description {
-          &:hover {
-            text-decoration: underline;
-          }
-        }
-      }
     }
   }
   
